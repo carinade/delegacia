@@ -40,31 +40,22 @@
         </nav>
         <div class="jumbotron">                   
             <h1>Delegacia de Townsville<br>
-            <small>Ambinte de controle de meliantes</small>
+                <small>Ambinte de controle de meliantes</small>
             </h1>
         </div>
         <div class="container">            
             <div class="col-sm-offset-1 col-sm-10">
-                <div class="btn-group btn-group-justified">
-                    <div class="btn-group">
-                        <form method="post" action="cadastra-fichapolicial.jsp">
-                            <button type="submit" class="btn btn-default">Cadastro</button>
-                        </form>
-                    </div>
-                    <div class="btn-group">
-                        <form method="post" action="mvc?logica=ListaMelianteLogica">
-                            <button type="submit" class="btn btn-default">Lista de meliantes</button>
-                        </form>
-                    </div>
-                    <div class="btn-group">
-                        <form method="post" action="mvc?logica=ListaParaRemoverMelianteLogica">
-                            <button type="submit" class="btn btn-default">Remoção</button>
-                        </form>
-                    </div>
-                    <div class="btn-group">
-                        <form method="post" action="mvc?logica=ListaForagidosLogica">
-                            <button type="submit" class="btn btn-default">Foragidos</button>
-                        </form>
+                <div class="col-sm-4 col-xs-12">
+                    <img src="http://nerdiceseafins.files.wordpress.com/2010/08/cityoftownsville.png" alt="" class="img-responsive img-rounded">
+                </div>			
+                <div class="col-sm-7 col-xs-12">
+                    <div class="row">					
+                        <h1>Sobre nós</h1>
+                        <p class="text-justify">A delegacia de Townsville tem o dever
+                            de cuidar da nossa amada cidade. As meninas super poderosas tentam 
+                        prender os criminosos, mas os responsáveis mesmo somos nós. O horário de
+                        visitas é de segunda a sexta até as seis da tarde. Favor ligar e 
+                        falar com o coronel.</p>	
                     </div>
                 </div>
             </div>
