@@ -43,7 +43,7 @@
         </nav>
         <div class="jumbotron">                   
             <h1>Delegacia de Townsville<br>
-                <small>Ambinte de controle de meliantes</small>
+                <small>Ambiente de controle de meliantes</small>
             </h1>
         </div>
         <div class="container">            
