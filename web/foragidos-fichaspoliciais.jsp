@@ -44,8 +44,19 @@
         <div class="container">            
             <div class="col-sm-offset-1 col-sm-10">
                 <h1>Foragidos</h1>
-
-                <table class="table table-hover">                  
+                <div class="table-responsive">
+                <table class="table table-hover"> 
+                    <tr>       
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Endereço</th>
+                            <th>Delito</th>
+                            <th>Data</th>
+                            <th>Hora</th>
+                            <th>Local</th>            
+                            <th>Estado</th> 
+                            <th>Foto</th> 
+                    </tr>
                     <c:forEach var ="meliante" items ="${meliante}">
                         <tr>                            
                             <td>${meliante.nome}<br><br></td >
@@ -59,10 +70,12 @@
                             <td><img src="${meliante.foto}" style="height:90px;"/></td>
                         </tr>
                     </c:forEach>
-                </table>
-                
+                </table>  
+                </div>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     </body>
 </html>
 
