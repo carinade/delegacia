@@ -15,35 +15,65 @@
     </head>
     <body>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <div class="container">
-            <div class="jumbotron">                   
-                <h1>Delegacia de Townsville</h1>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.jsp">Home</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.jsp">Delegacia</a></li>
+                        <li class="active"><a href="cadastra-fichapolicial.jsp">Cadastro</a></li>
+                        <li><a href="mvc?logica=ListaMelianteLogica">Lista de meliantes</a></li>
+                        <li><a href="mvc?logica=ListaParaRemoverMelianteLogica">Remoção</a></li>
+                        <li><a href="mvc?logica=ListaForagidosLogica">Foragidos</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-sm-offset-3 col-sm-6">
-                <h1>Insira os dados do meliante</h1>
-                <form action ="mvc?logica=AdicionaMelianteLogica" method="POST">
-                    *todos os campos são obrigatórios
+        </nav>
+        <div class="jumbotron">                   
+            <h1>Delegacia de Townsville<br>
+                <small>Ambinte de controle de meliantes</small>
+            </h1>
+        </div>
+        <div class="container">
+            <div class="col-sm-offset-1 col-sm-10">
+                <h1>Insira os dados do meliante <br><small>*todos os campos são obrigatórios</small></h1>
+                
+                <div class="col-sm-6">                    
+                    <form action ="mvc?logica=AdicionaMelianteLogica" method="POST">
+
+                        <table style="border: 2px solid transparent;">
+                            <tr>
+                                <td>Nome:<br><br></td>
+                                <td><input type ="text" name ="nome" /><br><br></td>
+                            </tr>
+                            <tr>
+                                <td>CPF:<br><br></td>
+                                <td><input type ="text" name ="cpf" /><br><br></td>
+                            </tr>
+                            <tr>
+                                <td>Endereço:<br><br></td>
+                                <td><input type ="text" name ="endereco" /><br><br></td>
+                            </tr>
+                            <tr>
+                                <td>Delito:<br><br></td>
+                                <td><input type ="text" name ="delito" /><br><br></td>
+                            </tr>
+                            <tr>
+                                <td>Data:&nbsp;<br><br></td>
+                                <td><input type ="text" name ="data" /><br><br></td>
+                            </tr>
+                        </table>  
+                </div>
+                <div class="col-sm-6">
                     <table style="border: 2px solid transparent;">
-                        <tr>
-                            <td>Nome:<br><br></td>
-                            <td><input type ="text" name ="nome" /><br><br></td>
-                        </tr>
-                        <tr>
-                            <td>CPF:<br><br></td>
-                            <td><input type ="text" name ="cpf" /><br><br></td>
-                        </tr>
-                        <tr>
-                            <td>Endereço:<br><br></td>
-                            <td><input type ="text" name ="endereco" /><br><br></td>
-                        </tr>
-                        <tr>
-                            <td>Delito:<br><br></td>
-                            <td><input type ="text" name ="delito" /><br><br></td>
-                        </tr>
-                        <tr>
-                            <td>Data:&nbsp;<br><br></td>
-                            <td><input type ="text" name ="data" /><br><br></td>
-                        </tr>
                         <tr>
                             <td>Hora: <br><br></td>
                             <td><input type ="text" name ="hora" /><br><br></td>
@@ -66,10 +96,10 @@
                         <tr><td>&nbsp; </td>
                             <td>&nbsp; </td>
                         </tr>
-                        
+
                     </table>                         
+                </div>
             </div>
-            
-        </div>
+           </div>  
     </body>
 </html>
